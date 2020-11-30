@@ -1,4 +1,4 @@
-$MriRaw = Get-ChildItem -Path '\Volumes\nice\p206\sleep_cog\MRI_RAW' -Directory
+$MriRaw = Get-ChildItem -Path 'Pathname' -Directory
 $Results = foreach ($Folder in $MriRaw)
     {
     [PSCustomObject]@{
