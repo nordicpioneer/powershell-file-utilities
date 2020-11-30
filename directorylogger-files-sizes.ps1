@@ -1,5 +1,5 @@
-$MriRaw = Get-ChildItem -Path 'Pathname' -Directory
-$Results = foreach ($Folder in $MriRaw)
+$Root = Get-ChildItem -Path 'Pathname' -Directory
+$Results = foreach ($Folder in $Root)
     {
     [PSCustomObject]@{
         FolderName = $Folder.FullName
